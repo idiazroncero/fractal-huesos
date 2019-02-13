@@ -26,5 +26,3 @@ huesos.addStatic(__dirname + '/assets');
  * Export the customised theme instance so it can be used in Fractal projects
  */
 module.exports = huesos;
-
-module.exports = require('./src/theme');
