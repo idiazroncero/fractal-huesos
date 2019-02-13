@@ -8,7 +8,7 @@ const mandelbrot = require('@frctl/mandelbrot');
 const huesos = mandelbrot({
     styles: [
         'default', 
-        '/assets/huesos.css'
+        '/_subtheme/huesos.css'
     ] // link to the default stylesheet followed by a custom one
 });
 
@@ -20,7 +20,7 @@ huesos.addLoadPath(__dirname + '/views');
 /*
  * Specify the static assets directory that contains the custom stylesheet.
  */
-huesos.addStatic(__dirname + '/assets');
+huesos.addStatic(__dirname + '/assets', '_subtheme');
 
 /*
  * Export the customised theme instance so it can be used in Fractal projects
