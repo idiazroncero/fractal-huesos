@@ -7,7 +7,6 @@ const mandelbrot = require('@frctl/mandelbrot');
  */
 const huesos = mandelbrot({
     styles: [
-        'default', 
         '/_subtheme/huesos.css'
     ] // link to the default stylesheet followed by a custom one
 });
