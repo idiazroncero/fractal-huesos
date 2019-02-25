@@ -10,10 +10,10 @@
 }
 
 .AssetList-name {
-    color: rgba($color-text, 0.5);
+    color: rgba(get-color(text, primary), 0.5);
 
     strong {
-        color: $color-link;
+        color: $link-color;
         font-weight: normal;
     }
 }
@@ -27,7 +27,7 @@
 
     &:hover {
         .AssetList-path {
-            color: rgba($color-text, 0.75);
+            color: rgba(get-color(text, primary), 0.75);
         }
 
         .AssetList-icon {

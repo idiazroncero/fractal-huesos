@@ -1,5 +1,25 @@
 @import "../../node_modules/huesos/src/scss/style.scss";
+@import "mixins/mixins";
 
-body {
-    background-color: pink;
-}
+$highlight-theme: 'github' !default;
+
+$width-sidebar: 240px;
+$handle-size: 0.625rem;
+
+$mq-breakpoints: (
+    navCollapse:  500px,
+    medium:  600px,
+    large:  800px
+);
+
+$color-background-offset: #f6f6f6 !default;
+
+
+@import "layout/layout";
+@import "misc";
+
+@import "sass-mq/_mq";
+@import "highlight.js/styles/github";
+
+
+@import "components/**/*.scss";

@@ -17,7 +17,7 @@
 
     @include mq(navCollapse) {
         background-color: $color-background-offset;
-        border: 1px solid $color-frame-border;
+        border: 1px solid $separator-color;
     }
 }
 
@@ -76,7 +76,7 @@
 }
 
 .Preview-handle {
-    @include border-inline(start, 1px solid $color-frame-border);
+    @include border-inline(start, 1px solid $separator-color);
     @include dragHandle;
     @include offset-inline(end, 0);
     position: absolute;

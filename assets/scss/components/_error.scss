@@ -3,7 +3,7 @@
 
     pre {
         @include font(code);
-        color: rgba($color-text, 0.75);
+        color: rgba(get-color(text, primary), 0.75);
     }
 }
 

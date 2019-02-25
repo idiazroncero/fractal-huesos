@@ -6,7 +6,7 @@
     @include font(label);
     @include padding-inline(start, 1rem);
     margin-bottom: 0.5rem;
-    color: $color-sidebar-heading;
+    color: get-color(base, secondary);
 }
 
 .Tree-collection {
@@ -37,10 +37,10 @@
     cursor: pointer;
     touch-action: manipulation;
     user-select: none;
-    color: $color-text;
+    color: get-color(text, primary);
 
     &:hover {
-        background-color: $color-ui-hover;
+        background-color: get-color(base, primary);
     }
 
     span {
@@ -78,11 +78,11 @@
     text-decoration: none;
 
     &:hover {
-        background-color: $color-ui-hover;
+        background-color: get-color(base, primary);
     }
 
     .is-current & {
-        background-color: $color-ui-active;
+        background-color: get-color(base, secondary);
     }
 
     .Status {

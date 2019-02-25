@@ -29,7 +29,7 @@
 
     @include mq($until: navCollapse) {
         margin: 0;
-        border-bottom: 1px solid $color-frame-border;
+        border-bottom: 1px solid $separator-color;
         padding: 0.75rem;
 
         .Status .Status-label {
@@ -55,10 +55,10 @@
 }
 
 .Pen-previewLink {
-    @include link-default($color-heading, none);
+    @include link-default(get-color(base, primary), none);
 
     svg {
-        fill: $color-link;
+        fill: $link-color;
         opacity: 0.75;
     }
 
@@ -107,7 +107,7 @@
     overflow: hidden;
     margin: $handle-size;
     margin-top: 0;
-    border: 1px solid $color-frame-border;
+    border: 1px solid $separator-color;
 
     @include mq($until: navCollapse) {
         display: none;
